@@ -1,34 +1,31 @@
-# Utils-template
+# Dom
 
-工具包模板
+dom 操作相关工具库
 
-## 开发
-
-安装依赖
+## 安装
 
 ```bash
-pnpm i
+npm i @justichentai/dom
 ```
 
-然后在 `./src` 中开发
+## 使用
 
-## 单测
-
-内置 `jest` 在 `./test` 中写单元测试
-
-运行命令进行测试
-```bash
-pnpm test
+```ts
+import { xxx } from '@justichentai/dom'
 ```
 
-## 打包
+## Api
 
-```bash
-pnpm build
+### Clipboard
+
+将内容复制到粘贴板
+
+```ts
+import { clipboard } from '@justichentai/dom'
+
+await clipboard(text)
 ```
 
-## 发包
-
-```bash
-pnpm publish --access public
+```ts
+async function clipboard(text: string): Promise<void>
 ```

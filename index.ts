@@ -1,3 +1,3 @@
-import Utils from './src'
+import clipboard from './src/clipboard'
 
-export { Utils as default }
+export { clipboard }
